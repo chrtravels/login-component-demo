@@ -4,7 +4,6 @@ import { ThemeContext } from '../../pages/index';
 import ToggleSwitch from '../toggle/ToggleSwitch';
 
 const Navbar = () => {
-  const { isDarkMode } = useContext(ThemeContext)
 
   return (
     <div className={styles.navbar}>

@@ -1,0 +1,72 @@
+@import 'styles/theme-colors';
+
+.layout {
+  background: $light-default-background;
+  color: $light-default-text;
+}
+
+.darkMode {
+  background-color: $dark-default-background;
+  color: $dark-default-text;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
+
+.loginStatus {
+  background-color: #FF7B0F;
+  border: none;
+  height: 2.5rem;
+  width: 6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: .5rem;
+}
